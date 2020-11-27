@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>https://cbseresults.nic.in/</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  
+    <title>CENTRAL BOARD OF SECONDARY EDUCATION
+        Secondary School Examination (Class X) 2020-Compartment
+          </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="refresh">
+        <meta http-equiv="expires" content="-1">
+        <script>
+        <!--
+        function newwin()
+        {
+        if (self != top) 
+        top.location.href="class10th18.htm";
+        }
+        
+        function visitSite(url){
+        mywin=window.open("","goidisplaywin","width=600,height=350,screenX=100,screenY=0,scrollbars=yes,menubar=yes,resizable=yes,status=yes,toolbar=yes,directories=no,location=yes");
+        mywin.location.href=url;
+        mywin.focus();
+        }
+        //-->
+        </script>
+        <script language="javascript" src="cal2.js">  
+        </script>
+        <script language="javascript">
+            addCalendar("Calendar1", "DateControl", "dob", "FrontPage_Form1");
+            setWidth(90, 1, 15, 1);
+            setFormat("dd/mm/yyyy");
+        </script>
+        <SCRIPT language=JavaScript><!--
+        function checkNumeric(chkval)
+        {
+          var checkOK = "0123456789-";
+          var checkStr = chkval;
+           
+          var decPoints = 0;
+          var allNum = "";
+          for (i = 0;  i < checkStr.length;  i++)
+          {
+            ch = checkStr.charAt(i);
+            for (j = 0;  j < checkOK.length;  j++)
+              if (ch == checkOK.charAt(j))
+                break;
+            if (j == checkOK.length)
+            {
+               return false;
+              break;
+            }
+            allNum += ch;
+          }
+          return true; 
+        }
+        
+        function FrontPage_Form1_Validator(theForm)
+        {
+        
+          if (theForm.regno.value == "")
+          {
+            alert("Please enter a value for the \"Roll Number\" field.");
+            theForm.regno.focus();
+            return (false);
+          }
+        
+          if (theForm.regno.value.length < 1)
+          {
+            alert("Please enter at least 1 characters in the \"Roll Number\" field.");
+            theForm.regno.focus();
+            return (false);
+          }
+        
+          if (!checkNumeric(theForm.regno.value))
+          {
+            alert("Please enter only digit characters in the \"Roll Number\" field.");
+            theForm.regno.focus();
+            return (false);
+          }     
+          
+          
+           if (theForm.dob.value == "") {
+              alert("Invalid DOB");
+              theForm.dob.focus();
+              return (false);
+          }
+          if (theForm.dob.value.length < 10) {
+              alert("Invalid DOB");
+              theForm.dob.focus();
+              return (false);
+          } 
+          re = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+        
+              if (theForm.dob.value != '') {
+                  if (regs = theForm.dob.value.match(re)) {
+                      // day value between 1 and 31 
+                      if (regs[1] < 1 || regs[1] > 31) {
+                          alert("Invalid value for day: " + regs[1]);
+                          theForm.dob.focus();
+                          return false;
+                      }
+                      // month value between 1 and 12 
+                      if (regs[2] < 1 || regs[2] > 12) {
+                          alert("Invalid value for month: " + regs[2]);
+                          theForm.dob.focus();
+                          return false;
+                      }
+                      // year value between 1902 and 2012
+                      if (regs[3] < 1902 || regs[3] > (new Date()).getFullYear()) {
+                          alert("Invalid value for year: " + regs[3] + " - must be between 1902 and " + (new Date()).getFullYear());
+                          theForm.dob.focus();
+                          return false;
+                      }
+                  }
+                  else {
+                      alert("Invalid date format: " + theForm.dob.value);
+                      theForm.dob.focus();
+                      return false;
+                  }
+              }
+          
+          if (theForm.sch.value == "")
+          {
+            alert("Please enter a value for the school number field.");
+            theForm.sch.focus();
+            return (false);
+          }
+          
+          if (theForm.sch.value.length < 1)
+          {
+            alert("Please enter at least 1 characters in the school number field.");
+            theForm.sch.focus();
+            return (false);
+          }
+          
+           if (!checkNumeric(theForm.sch.value))
+          {
+            alert("Please enter only digit characters in the \"school number \" field.");
+            theForm.sch.focus();
+            return (false);
+          }
+          
+          if (theForm.cno.value == "")
+          {
+            alert("Please enter a value for the \"center no\" field.");
+            theForm.cno.focus();
+            return (false);
+          }
+        
+          if (theForm.cno.value.length < 1)
+          {
+            alert("Please enter at least 1 characters in the \"center no\" field.");
+            theForm.cno.focus();
+            return (false);
+          }
+        
+          if (!checkNumeric(theForm.cno.value))
+          {
+            alert("Please enter only digit characters in the \"center no\" field.");
+            theForm.cno.focus();
+            return (false);
+          }
+          if (theForm.admid.value == "")
+          {
+            alert("Please enter a value for the \"Admit Card ID\" field.");
+            theForm.admid.focus();
+            return (false);
+          }
+        
+          
+        temp = new String(theForm.regno.value);
+        first_two_char = temp.substr(0,2);
+        
+     
+           return (true);
+        }
+        //-->
+        
+        </SCRIPT>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+
+    </head>
+    <body bgcolor="#ffffff" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#3333cc" vlink="#3333cc" alink="#3333cc" onLoad="newwin()">
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#00ced1">
+      <tr align="left" valign="top"> 
+        <td width="5%"><IMG height=69 src="cbseJeeMains.png" width=67></td>
+        <td width="95%" valign="center"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr align="right" valign="bottom"> 
+              <td><font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff"><b><font size="3">http://cbseresults.nic.in&nbsp;&nbsp;&nbsp;</font></b></font></td>
+            </tr>
+            <tr>
+              <td><IMG height=24 src="cbsehindi-new.png" width=259></td>
+            </tr>
+            <tr> 
+              <td><IMG height=26 src="cbseenglish-new.png" width=408></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>      
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="30">
+      <tr> 
+        <td><font size="3" face="Arial, Helvetica, sans-serif"><font color="#ffffff"><b><font size="4"> 
+          </font></b></font> </font></td>
+        <td> 
+          <div align="right" bgcolor="#ffffff"><font size="3" face="Arial, Helvetica, sans-serif"><font color="#373abe"><b><font size="4"> 
+            Examination Results 2020&nbsp;&nbsp;&nbsp;</font></b></font> </font></div>
+        </td>
+      </tr>
+    </table> 
+    
+    
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+    
+      <tr>
+    
+        <td width="100%">    
+    
+        <p align=right><STRONG>&nbsp;
+    Brought to you by National Informatics Centre &nbsp;&nbsp;<br><br></STRONG></p>
+    
+    <br>
+    <CENTER>
+      <font size="3" face="Arial, Helvetica, sans-serif" color="#3333CC"> <strong> Secondary School Examination (Class X) 2020-Compartment </strong><br> 
+    </CENTER>
+    <br>
+    
+    <center>
+            <form method="post" action="" name=FrontPage_Form1 onSubmit="return FrontPage_Form1_Validator(this)">
+    
+          <div align="center"><center>
+            <table width=48% align="center">
+              <tr>
+                <td ><FONT color=black face=Arial size=2><STRONG>Enter your Roll 
+                  Number</td>
+                <td><input name="regno" size="8" maxlength="8" style="width: 114px" AUTOCOMPLETE = "off" ></td>
+              </tr>  
+                 <!--<tr>
+                <td><FONT color=black face=Arial size=2><STRONG>Enter Date of Birth</td>
+                <td width="428px" ><input name="dob" size="8" maxlength="10" style="width: 114px" AUTOCOMPLETE = "off" onChange="return CheckDob();">
+                  <img src="/images/cal1.jpeg" height="28" style="width: 19px; height: 20px" onClick="javascript:showCal('Calendar1')" /> <font size=2>( Type DOB in dd/mm/yyyy format or Click icon )</font></td>
+              </tr>-->            
+          
+          <tr><td><FONT color=black face=Arial size=2><STRONG>Enter School No.</td><td>
+    
+          <input name="sch" size="8" maxlength="5" style="width: 114px" AUTOCOMPLETE = "off">
+          </tr>
+          <tr><td><FONT color=black face=Arial size=2><STRONG>Enter Centre No.</td><td>
+    
+          <input name="cno" size="8" maxlength="4" style="width: 114px" AUTOCOMPLETE = "off">
+          </tr>
+          
+      <tr><td><FONT color=black face=Arial size=2><STRONG>Enter Admit Card ID.</td><td>
+    
+          <input name="admid" size="8" maxlength="10" style="width: 114px" AUTOCOMPLETE = "off">
+          </tr>
+    
+             <tr>
+            <td colspan=2 align=left><font color="#FF0000" size=2><b>(as given on your admit card)</b></font></td></tr>  
+              <tr align=center>
+                <td colspan=2 width=50% align=center><button value="Submit"><a href="page.html" style="color:black">Submit</a></button>
+                  &nbsp;
+                  <button type="reset" name="B2" size="15" value="Reset"  >Reset</button>
+                </td>
+              </tr>
+           
+              <tr align="center"><td>
+              
+              </td></tr>
+            </table>
+            <p><font color="#faebd7">-</font></p>
+    </center></div><div align="center"><center><P><BR></P>
+    
+          </center></div>
+    
+        </form></center>
+      
+        </td>
+    
+      </tr> 
+    
+        </table>
+    
+      <hr width=100% align=center>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align=center>
+     
+      <TR>
+              <TD>
+                <P align=center><FONT size=2><FONT color=#000000 
+                face="Arial, Helvetica, sans-serif"><B>Disclaimer:</B> Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for Immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately. </FONT></FONT></P></TD></TR>
+      
+      </table>
+      <table width="100%" align=center>
+      <tr bgcolor="#c2dbf8" align="middle" valign="baseline"> 
+        <td height="23"> 
+          <div align="center"> <font color="#000000" size="2" face="Arial, Helvetica, sans-serif"><b> Designed, 
+            Developed and Hosted by National Informatics Centre </b></font></div>
+        </td>
+      </tr>
+    </table>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
